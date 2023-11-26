@@ -40,5 +40,16 @@ Find the Elf carrying the most Calories. How many total Calories is that Elf car
 import { readFileSync } from "fs";
 
 const input = readFileSync("./input/input.txt", "utf8").split("\n");
-const arrays = input.map((x) => x.split(""));
+let index = 0;
+let arrays: number[][] = [];
+let row: number[] = new Array<number>();
+arrays[index] = [];
+input.forEach((x) => {
+  if (x === "") {
+    arrays.push(row);
+    row = new Array<number>();
+  } else {
+    row.push(parseInt(x));
+  }
+});
 console.log(arrays);
