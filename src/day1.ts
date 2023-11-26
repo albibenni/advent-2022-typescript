@@ -37,3 +37,8 @@ In case the Elves get hungry and need extra snacks, they need to know which Elf 
 
 Find the Elf carrying the most Calories. How many total Calories is that Elf carrying?
 */
+import { readFileSync } from "fs";
+
+const input = readFileSync("./input/input.txt", "utf8").split("\n");
+const arrays = input.map((x) => x.split(""));
+console.log(arrays);

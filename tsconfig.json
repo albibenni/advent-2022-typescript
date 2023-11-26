@@ -1,20 +1,20 @@
 {
   "ts-node": {
     // Do not forget to `npm i -D tsconfig-paths`
-    "require": ["tsconfig-paths/register"]
+    // "require": ["tsconfig-paths/register"],
+    "esm": true
   },
   "compilerOptions": {
-    "outDir": "dist",
-    "lib": ["ESNext"],
-    "module": "NodeNext",
+    // "lib": ["ESNext"],
+    "module": "ESNext",
     "target": "es2022",
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "NodeNext",
-    "rootDir": "./src"
+    "outDir": "out",
+    "sourceMap": true
   },
-  "include": ["src"]
+  "include": ["src/**/*.ts"]
 }

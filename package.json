@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
+  "type": "module",
   "scripts": {
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "day1": "node --loader ts-node/esm src/day1.ts"
   },
   "keywords": [],
   "author": "",
